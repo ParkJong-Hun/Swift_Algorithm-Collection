@@ -7,13 +7,11 @@ func solution(_ nums:[Int]) -> Int {
     for i in 0..<nums.count {
         for j in i+1..<nums.count {
             for k in j+1..<nums.count {
-                if arr.contains(nums[i]+nums[j]+nums[k]) {
-                    continue
-                }
                 arr.append(nums[i]+nums[j]+nums[k])
             }
         }
     }
+    arr.sorted()
     //합을 하나하나 소수인지 검사
     for i in 0..<arr.count {
         for j in 2..<arr[i]+1 {
@@ -28,4 +26,4 @@ func solution(_ nums:[Int]) -> Int {
     //결과값 반환
     return answer
 }
-solution([1,2,3,4])
+solution([2,4,6,9])
