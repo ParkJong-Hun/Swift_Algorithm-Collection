@@ -13,4 +13,4 @@ func solution(_ n:Int64) -> [Int] {
     answer.append(x)
     return answer
 }
-solution(12345)
+solution(54321)
