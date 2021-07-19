@@ -11,3 +11,4 @@ func solution(_ n:Int, _ m:Int) -> [Int] {
 }
 solution(3, 12)//3, 12
 solution(2, 5)//1, 10
+//유클리드 호제법
