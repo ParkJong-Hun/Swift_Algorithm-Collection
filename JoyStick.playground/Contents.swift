@@ -14,7 +14,7 @@ func solution(_ name:String) -> Int {
             }
         }
     }
-    var minMove = name.count-1
+    var minMove = name.count - 1
     for i in 0..<name.count {
         if name[i] != "A" {
             var next = i + 1
@@ -29,4 +29,4 @@ func solution(_ name:String) -> Int {
     return count
 }
 solution("JEROEN")  //56
-solution("JAN")     //23
+//solution("JAN")     //23
