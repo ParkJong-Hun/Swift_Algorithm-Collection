@@ -20,10 +20,8 @@ func solution(_ s:String) -> Int {
             } else {
                 if count > 1 {
                     str.append(String(count))
-                    str += temp
-                } else {
-                    str += temp
                 }
+                str += temp
                 count = 1
                 temp = String(s[com_start...com_end])
             }
@@ -48,4 +46,4 @@ solution("aaaaa")//2
 solution("aaaaaaaaaa")//3
 solution("aaaaaaaaaabbbbbbbbbb")//6
 solution("abcdefg")//7
-//테스트 케이스 4번 문제 틀림 미해결
+solution("abcabcabab")//7 //테스트 케이스 4번 문제 틀림 미해결
